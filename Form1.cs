@@ -16,5 +16,10 @@ namespace S.S.S
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
