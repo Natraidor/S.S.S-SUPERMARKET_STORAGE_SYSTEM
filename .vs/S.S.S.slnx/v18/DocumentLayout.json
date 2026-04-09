@@ -1,12 +1,87 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\c#\\S.S.S\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|F:\\c#\\S.S.S\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|solutionrelative:views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|f:\\c#\\s.s.s\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|solutionrelative:views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|F:\\c#\\S.S.S\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|f:\\c#\\s.s.s\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BE2CD7D-8EC4-4C62-A1E1-CD3E63C24613}|S.S.S.csproj|solutionrelative:models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "F:\\c#\\S.S.S\\views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "views\\LoginForm.cs",
+              "ToolTip": "F:\\c#\\S.S.S\\views\\LoginForm.cs*",
+              "RelativeToolTip": "views\\LoginForm.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAApwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T04:54:53.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "F:\\c#\\S.S.S\\views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "views\\LoginForm.cs",
+              "ToolTip": "F:\\c#\\S.S.S\\views\\LoginForm.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "views\\LoginForm.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T00:01:54.281Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "F:\\c#\\S.S.S\\controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "controllers\\LoginController.cs",
+              "ToolTip": "F:\\c#\\S.S.S\\controllers\\LoginController.cs",
+              "RelativeToolTip": "controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T23:57:37.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "F:\\c#\\S.S.S\\models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "models\\UsuarioModel.cs",
+              "ToolTip": "F:\\c#\\S.S.S\\models\\UsuarioModel.cs",
+              "RelativeToolTip": "models\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T23:49:20.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
