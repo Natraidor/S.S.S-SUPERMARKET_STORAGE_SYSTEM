@@ -57,8 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\CategoriasController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="data\Conexion.cs" />
+    <Compile Include="models\CategoriasModel.cs" />
+    <Compile Include="views\CategoriasForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CategoriasForms.Designer.cs">
+      <DependentUpon>CategoriasForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +92,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="views\CategoriasForms.resx">
+      <DependentUpon>CategoriasForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
