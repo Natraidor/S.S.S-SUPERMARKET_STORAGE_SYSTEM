@@ -65,11 +65,13 @@
     <Compile Include="views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\Tablero.cs">
+    <Compile Include="..\Tablero.cs">
       <SubType>Form</SubType>
+      <Link>views\Tablero.cs</Link>
     </Compile>
-    <Compile Include="views\Tablero.Designer.cs">
+    <Compile Include="..\Tablero.Designer.cs">
       <DependentUpon>Tablero.cs</DependentUpon>
+      <Link>views\Tablero.Designer.cs</Link>
     </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -90,8 +92,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="views\Tablero.resx">
+    <EmbeddedResource Include="..\Tablero.resx">
       <DependentUpon>Tablero.cs</DependentUpon>
+      <Link>views\Tablero.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
