@@ -1,6 +1,6 @@
 ﻿namespace S.S.S.views
 {
-    partial class Inicio
+    partial class Tablero
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lblTotalVentas = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblTotalProductos = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelContenido = new System.Windows.Forms.Panel();
+            this.btnCategorias = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
+            this.btnAgregarProductos = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnTablero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelContenido.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -82,16 +88,6 @@
             this.panel1.Size = new System.Drawing.Size(163, 89);
             this.panel1.TabIndex = 3;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.lblTotalProductos);
-            this.panel2.Location = new System.Drawing.Point(209, 170);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(180, 95);
-            this.panel2.TabIndex = 4;
-            // 
             // lblTotalVentas
             // 
             this.lblTotalVentas.AutoSize = true;
@@ -101,6 +97,16 @@
             this.lblTotalVentas.Size = new System.Drawing.Size(29, 31);
             this.lblTotalVentas.TabIndex = 0;
             this.lblTotalVentas.Text = "0";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblTotalProductos);
+            this.panel2.Location = new System.Drawing.Point(209, 170);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(180, 95);
+            this.panel2.TabIndex = 4;
             // 
             // lblTotalProductos
             // 
@@ -112,22 +118,80 @@
             this.lblTotalProductos.TabIndex = 0;
             this.lblTotalProductos.Text = "0";
             // 
-            // panel3
+            // panelContenido
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(0, -3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(192, 334);
-            this.panel3.TabIndex = 5;
+            this.panelContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelContenido.Controls.Add(this.btnCategorias);
+            this.panelContenido.Controls.Add(this.btnVentas);
+            this.panelContenido.Controls.Add(this.btnAgregarProductos);
+            this.panelContenido.Controls.Add(this.btnProductos);
+            this.panelContenido.Controls.Add(this.btnTablero);
+            this.panelContenido.Location = new System.Drawing.Point(0, -3);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(192, 334);
+            this.panelContenido.TabIndex = 5;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCategorias.Location = new System.Drawing.Point(11, 264);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(84, 42);
+            this.btnCategorias.TabIndex = 6;
+            this.btnCategorias.Text = "Categorias";
+            this.btnCategorias.UseVisualStyleBackColor = false;
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnVentas.Location = new System.Drawing.Point(11, 202);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(59, 43);
+            this.btnVentas.TabIndex = 6;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarProductos
+            // 
+            this.btnAgregarProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAgregarProductos.Location = new System.Drawing.Point(11, 138);
+            this.btnAgregarProductos.Name = "btnAgregarProductos";
+            this.btnAgregarProductos.Size = new System.Drawing.Size(127, 43);
+            this.btnAgregarProductos.TabIndex = 6;
+            this.btnAgregarProductos.Text = "Agregar productos";
+            this.btnAgregarProductos.UseVisualStyleBackColor = false;
+            this.btnAgregarProductos.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnProductos.Location = new System.Drawing.Point(11, 78);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(70, 38);
+            this.btnProductos.TabIndex = 6;
+            this.btnProductos.Text = "Productos";
+            this.btnProductos.UseVisualStyleBackColor = false;
+            // 
+            // btnTablero
+            // 
+            this.btnTablero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnTablero.Location = new System.Drawing.Point(11, 26);
+            this.btnTablero.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.btnTablero.Name = "btnTablero";
+            this.btnTablero.Size = new System.Drawing.Size(59, 32);
+            this.btnTablero.TabIndex = 6;
+            this.btnTablero.Text = "Tablero";
+            this.btnTablero.UseVisualStyleBackColor = false;
+            this.btnTablero.Click += new System.EventHandler(this.btnTablero_Click);
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(591, 326);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,6 +204,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelContenido.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +219,11 @@
         private System.Windows.Forms.Label lblTotalVentas;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblTotalProductos;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelContenido;
+        private System.Windows.Forms.Button btnTablero;
+        private System.Windows.Forms.Button btnCategorias;
+        private System.Windows.Forms.Button btnVentas;
+        private System.Windows.Forms.Button btnAgregarProductos;
+        private System.Windows.Forms.Button btnProductos;
     }
 }

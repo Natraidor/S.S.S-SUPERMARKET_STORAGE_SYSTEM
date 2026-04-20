@@ -28,7 +28,7 @@ namespace S.S.S
             {
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
-                Inicio inicioForm = new Inicio();
+                Tablero inicioForm = new Tablero();
                 inicioForm.Show();
 
             }
