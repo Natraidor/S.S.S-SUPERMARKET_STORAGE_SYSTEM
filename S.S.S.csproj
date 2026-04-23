@@ -58,20 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controllers\LoginController.cs" />
+    <Compile Include="controllers\TableroContoller.cs" />
     <Compile Include="data\Conexion.cs" />
-    <Compile Include="views\Form1.cs">
+    <Compile Include="models\TableroModel.cs" />
+    <Compile Include="views\TableroForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="..\Tablero.cs">
-      <SubType>Form</SubType>
-      <Link>views\Tablero.cs</Link>
-    </Compile>
-    <Compile Include="..\Tablero.Designer.cs">
-      <DependentUpon>Tablero.cs</DependentUpon>
-      <Link>views\Tablero.Designer.cs</Link>
+    <Compile Include="views\TableroForm.Designer.cs">
+      <DependentUpon>TableroForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -92,9 +86,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="..\Tablero.resx">
-      <DependentUpon>Tablero.cs</DependentUpon>
-      <Link>views\Tablero.resx</Link>
+    <EmbeddedResource Include="views\TableroForm.resx">
+      <DependentUpon>TableroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
