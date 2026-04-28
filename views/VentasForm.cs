@@ -1,8 +1,13 @@
-namespace ventas
+using System;
+using System.Windows.Forms;
+using System.Drawing;
+
+
+namespace S.S.S
 {
-    public partial class Form1 : Form
+    public partial class VentasForm : Form
     {
-        public Form1()
+        public VentasForm()
         {
             InitializeComponent();
         }

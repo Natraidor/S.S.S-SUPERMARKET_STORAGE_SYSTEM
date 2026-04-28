@@ -35,14 +35,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-<<<<<<< HEAD:Form1.Designer.cs
+
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
-=======
+
             this.Text = "Inicio";
->>>>>>> origin/nataren:views/Inicio.Designer.cs
+
         }
 
         #endregion
