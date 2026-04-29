@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace S.S.S
 {
-    public partial class VentasForm : Form
+    public partial class VentasForm : System.Windows.Forms.Form
     {
         public VentasForm()
         {
