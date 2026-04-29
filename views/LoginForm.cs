@@ -28,8 +28,8 @@ namespace S.S.S
             {
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
-                Inicio inicioForm = new Inicio();
-                inicioForm.Show();
+                //Inicio inicioForm = new Inicio();
+                //inicioForm.Show();
 
             }
             else
@@ -40,7 +40,7 @@ namespace S.S.S
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void txtPass_TextChanged(object sender, EventArgs e)

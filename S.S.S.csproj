@@ -36,9 +36,7 @@
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Data.SqlClient.4.9.1\lib\net462\System.Data.SqlClient.dll</HintPath>
@@ -59,19 +57,27 @@
   <ItemGroup>
     <Compile Include="controllers\CategoriasController.cs" />
     <Compile Include="controllers\LoginController.cs" />
+    <Compile Include="controllers\TableroContoller.cs" />
     <Compile Include="data\Conexion.cs" />
     <Compile Include="models\CategoriasModel.cs" />
+    <Compile Include="models\TableroModel.cs" />
+    <Compile Include="models\UsuarioModel.cs" />
     <Compile Include="views\CategoriasForms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\CategoriasForms.Designer.cs">
       <DependentUpon>CategoriasForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\Inicio.cs">
+    <Compile Include="views\LoginForm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="views\TableroForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Inicio.Designer.cs">
-      <DependentUpon>Inicio.cs</DependentUpon>
+    <Compile Include="views\TableroForm.Designer.cs">
+      <DependentUpon>TableroForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -79,7 +85,6 @@
     <Compile Include="views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\UsuarioModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -95,8 +100,14 @@
     <EmbeddedResource Include="views\CategoriasForms.resx">
       <DependentUpon>CategoriasForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\TableroForm.resx">
+      <DependentUpon>TableroForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>LoginForm1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
