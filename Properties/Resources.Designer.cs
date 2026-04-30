@@ -69,5 +69,15 @@ namespace S.S.S.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_5532864 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart_5532864", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

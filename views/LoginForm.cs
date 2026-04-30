@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using S.S.S.controllers;
 using S.S.S.views;
 
+
 namespace S.S.S
 {
     public partial class LoginForm : Form
@@ -26,8 +27,17 @@ namespace S.S.S
 
             if (loginExitoso)
             {
+                
+                //ESTO ME SIRVE PARA OTRO DIA TENGO QUE GUARDAR EL USUARIO LOGUEADO EN UNA VARIABLE GLOBAL O ALGO ASI PARA PODER USARLO EN OTROS FORMULARIOS
+                string user = txtUser.Text;
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
+                MenuForm menuForm = new MenuForm();
+                menuForm.Show();
+
+                //TableroForm ShowTableroForm = new TableroForm();
+                //ShowTableroForm.Show();
+
                 //Inicio inicioForm = new Inicio();
                 //inicioForm.Show();
 

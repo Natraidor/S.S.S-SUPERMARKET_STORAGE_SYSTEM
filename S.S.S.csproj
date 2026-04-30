@@ -68,10 +68,11 @@
     <Compile Include="views\CategoriasForms.Designer.cs">
       <DependentUpon>CategoriasForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\LoginForm1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginForm.resx</DependentUpon>
+    <Compile Include="views\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\TableroForm.cs">
       <SubType>Form</SubType>
@@ -106,14 +107,15 @@
     <EmbeddedResource Include="views\CategoriasForms.resx">
       <DependentUpon>CategoriasForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\TableroForm.resx">
       <DependentUpon>TableroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>LoginForm1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="views\VentasForm.resx">
       <DependentUpon>VentasForm.cs</DependentUpon>
@@ -132,6 +134,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\shopping-cart_5532864.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,5 +38,10 @@ namespace S.S.S.views
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

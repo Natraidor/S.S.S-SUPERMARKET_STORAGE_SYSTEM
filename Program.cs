@@ -17,6 +17,7 @@ namespace S.S.S
             //Application.Run(new CategoriasForms());
             //Application.Run(new TableroForm());
             Application.Run(new LoginForm());
+            //Application.Run(new MenuForm());
         }
     }
 }

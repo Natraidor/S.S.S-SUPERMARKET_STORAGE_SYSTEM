@@ -90,7 +90,7 @@
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUser.Location = new System.Drawing.Point(393, 142);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(5);
             this.txtUser.Name = "txtUser";
             this.txtUser.PlaceholderText = "Nombre de usuario";
             this.txtUser.SelectedText = "";
@@ -158,6 +158,7 @@
             this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
@@ -173,7 +174,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(337, 56);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(359, 55);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(134, 26);
             this.guna2HtmlLabel1.TabIndex = 21;
@@ -192,6 +193,7 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.btnLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

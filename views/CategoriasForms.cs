@@ -242,5 +242,10 @@ namespace S.S.S.views
                 MessageBox.Show("Selecciona una categoría primero");
             }
         }
+
+        private void CategoriasForms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
