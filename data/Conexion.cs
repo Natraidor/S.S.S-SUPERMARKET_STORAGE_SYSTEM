@@ -13,7 +13,7 @@ namespace S.S.S.data
     {
         //Se crea un private string llamado cadenaConexion, esta cadena sirve para guardar la informacion de la conexion a la base de datos.
         //en Server="" se pone el nombre del servidor que lo sacamos del SQL Server management studio, en Database="" se pone el nombre de la base de datos a la que queremos conectarnos, en este caso se llama SSS.
-        private string cadenaConexion = "Server=localhost;Initial Catalog=SSS;Integrated Security=True;";
+        private string cadenaConexion = "Server=DESKTOP-13D1T0N\\SQLEXPRESS04; Database=SSS; Integrated Security=True;";
         //sqlConnection es una clase que representa una sesion unica con la base de datos 
         //y protected es un modificador de acceso que permite que la variable conectar sea accesible dentro de la clase Conexion y en las clases que hereden de Conexion, pero no desde fuera de estas clases.
         protected SqlConnection conectar = new SqlConnection();

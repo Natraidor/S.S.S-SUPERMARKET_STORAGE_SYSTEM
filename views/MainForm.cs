@@ -18,6 +18,7 @@ namespace S.S.S
 
             formHijo.TopLevel = false;
             formHijo.Dock = DockStyle.Fill;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
 
             panelContenedor.Controls.Add(formHijo);
             panelContenedor.Tag = formHijo;
