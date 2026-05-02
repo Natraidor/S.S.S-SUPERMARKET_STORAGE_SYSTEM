@@ -32,7 +32,7 @@ namespace S.S.S
                 string user = txtUser.Text;
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
-                MenuForm menuForm = new MenuForm();
+                MainForm menuForm = new MainForm();
                 menuForm.Show();
 
                 //TableroForm ShowTableroForm = new TableroForm();
