@@ -27,7 +27,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.Blue;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(180)))));
             this.panelMenu.Controls.Add(this.btnCategorias);
             this.panelMenu.Controls.Add(this.btnVentas);
             this.panelMenu.Controls.Add(this.btnAgregar);
@@ -41,16 +41,24 @@
             // 
             // btnCategorias
             // 
-            this.btnCategorias.Location = new System.Drawing.Point(18, 261);
+            this.btnCategorias.FlatAppearance.BorderSize = 0;
+            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategorias.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.Color.White;
+            this.btnCategorias.Location = new System.Drawing.Point(18, 333);
             this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(95, 38);
+            this.btnCategorias.Size = new System.Drawing.Size(95, 27);
             this.btnCategorias.TabIndex = 0;
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // btnVentas
             // 
-            this.btnVentas.Location = new System.Drawing.Point(18, 198);
+            this.btnVentas.FlatAppearance.BorderSize = 0;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.Location = new System.Drawing.Point(10, 251);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(91, 36);
             this.btnVentas.TabIndex = 1;
@@ -59,16 +67,24 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(18, 141);
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(10, 176);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(124, 36);
+            this.btnAgregar.Size = new System.Drawing.Size(161, 36);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar productos";
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(18, 84);
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.Location = new System.Drawing.Point(10, 98);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(103, 40);
             this.btnProductos.TabIndex = 3;
@@ -77,7 +93,12 @@
             // 
             // btnTablero
             // 
-            this.btnTablero.Location = new System.Drawing.Point(18, 28);
+            this.btnTablero.FlatAppearance.BorderSize = 0;
+            this.btnTablero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(110)))), ((int)(((byte)(200)))));
+            this.btnTablero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTablero.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTablero.ForeColor = System.Drawing.Color.White;
+            this.btnTablero.Location = new System.Drawing.Point(12, 34);
             this.btnTablero.Name = "btnTablero";
             this.btnTablero.Size = new System.Drawing.Size(93, 38);
             this.btnTablero.TabIndex = 4;
