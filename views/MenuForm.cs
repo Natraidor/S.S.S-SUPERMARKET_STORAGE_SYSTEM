@@ -51,12 +51,12 @@ namespace S.S.S.views
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            //AbrirFormularioEnPanel(new ProductosForm());
+            AbrirFormularioEnPanel(new ProductosForm());
         }
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)
         {
-
+            AbrirFormularioEnPanel(new AgregarProductos());
         }
 
         private void btnVentas_Click(object sender, EventArgs e)

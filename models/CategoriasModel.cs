@@ -1,4 +1,5 @@
 ﻿using S.S.S.data;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -9,17 +10,28 @@ namespace S.S.S.models
         // 🔍 Obtener todas las categorías
         public DataTable ObtenerCategorias()
         {
-            using (var connection = AbrirConextion())
+            DataTable tabla = new DataTable();
+            try
             {
-                string query = "SELECT * FROM Categorias";
-
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                using (var connection = AbrirConextion())
                 {
-                    DataTable tabla = new DataTable();
-                    adapter.Fill(tabla);
-                    return tabla;
+                    string query = "SELECT * FROM Categorias";
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                    {
+                        adapter.Fill(tabla);
+                    }
                 }
             }
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Error de base de datos: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error general: " + ex.Message);
+            }
+
+            return tabla;
         }
 
         // ➕ Insertar categoría

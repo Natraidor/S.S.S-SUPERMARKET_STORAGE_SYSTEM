@@ -21,6 +21,7 @@ namespace S.S.S.views
         public CategoriasForms()
         {
             InitializeComponent();
+            CargarCategorias();
         }
 
         // Método auxiliar para validar campos
@@ -44,8 +45,30 @@ namespace S.S.S.views
         // 🔄 CARGAR DATOS
         private void CargarCategorias()
         {
-            dgvCategorias.DataSource = controller.MostrarCategorias();
 
+            try
+            {
+                // 1. Intentamos obtener los datos
+                DataTable datos = controller.MostrarCategorias();
+
+                if (datos == null || datos.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron datos en la base de datos.");
+                }
+
+                dgvCategorias.DataSource = datos;
+
+                // 2. Solo si hay datos o la tabla cargó bien, configuramos las columnas
+                ConfigurarColumnasBotones();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar categorías: " + ex.Message, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void ConfigurarColumnasBotones(){
             // Botón Editar
             if (!dgvCategorias.Columns.Contains("Editar"))
             {

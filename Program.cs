@@ -16,8 +16,10 @@ namespace S.S.S
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CategoriasForms());
             //Application.Run(new TableroForm());
-            Application.Run(new LoginForm());
-            //Application.Run(new MenuForm());
+            //Application.Run(new LoginForm());
+            Application.Run(new MenuForm());
+            //Application.Run(new AgregarProductos());
+
         }
     }
 }
