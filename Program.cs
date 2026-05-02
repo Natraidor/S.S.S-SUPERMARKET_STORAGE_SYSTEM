@@ -12,7 +12,7 @@ namespace S.S.S
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new TableroForm());
+            Application.Run(new MainForm());
         }
     }
 }
