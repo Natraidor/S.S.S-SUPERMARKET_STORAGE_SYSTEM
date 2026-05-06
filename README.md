@@ -54,28 +54,3 @@ id_productos INT,
 
 );
 go
-
-
-
-
-insert into Usuarios(username, passwordUser,email) VALUES ('natraidor', 'Tricks404', 'nata39520@gmail.com');
-go
-select * from Usuarios
-go
-
-insert into Categorias(nombre, descripcion) VALUES ('Carnes', 'Carne congelada 2lb');
-go
-select * from Categorias
-go
-insert into Productos(nombre, precio, id_categoria, stock) values ('pollo', 19, 1, 1000)
-go
-select * from Productos
-go
-insert into Ventas(cantidad,total,id_productos) VALUES (30, 500, 1);
-go 
-select * from Ventas
-
-
-UPDATE Usuarios 
-SET passwordUser = 'd17e81e9c377cba76d91b2ac49a8751c1bc7496fe878f0d182ad54b713e2cca7' 
-WHERE username = 'natraidor';
