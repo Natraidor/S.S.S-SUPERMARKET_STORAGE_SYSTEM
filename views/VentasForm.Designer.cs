@@ -47,7 +47,7 @@ namespace S.S.S
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(277, 14);
+            this.lbltitulo.Location = new System.Drawing.Point(231, 9);
             this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
             this.lbltitulo.Size = new System.Drawing.Size(77, 30);
@@ -95,7 +95,7 @@ namespace S.S.S
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.RowHeadersWidth = 51;
             this.dgvVentas.RowTemplate.Height = 30;
-            this.dgvVentas.Size = new System.Drawing.Size(509, 174);
+            this.dgvVentas.Size = new System.Drawing.Size(420, 174);
             this.dgvVentas.TabIndex = 4;
             this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick_1);
             // 
@@ -119,7 +119,7 @@ namespace S.S.S
             this.gtxtBuscar.Name = "gtxtBuscar";
             this.gtxtBuscar.PlaceholderText = "";
             this.gtxtBuscar.SelectedText = "";
-            this.gtxtBuscar.Size = new System.Drawing.Size(364, 21);
+            this.gtxtBuscar.Size = new System.Drawing.Size(290, 21);
             this.gtxtBuscar.TabIndex = 5;
             // 
             // gunabtnBuscar
@@ -133,7 +133,7 @@ namespace S.S.S
             this.gunabtnBuscar.FillColor = System.Drawing.Color.White;
             this.gunabtnBuscar.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunabtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.gunabtnBuscar.Location = new System.Drawing.Point(500, 54);
+            this.gunabtnBuscar.Location = new System.Drawing.Point(426, 54);
             this.gunabtnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.gunabtnBuscar.Name = "gunabtnBuscar";
             this.gunabtnBuscar.Size = new System.Drawing.Size(89, 21);
@@ -145,7 +145,7 @@ namespace S.S.S
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(122)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(620, 342);
+            this.ClientSize = new System.Drawing.Size(546, 342);
             this.Controls.Add(this.gunabtnBuscar);
             this.Controls.Add(this.gtxtBuscar);
             this.Controls.Add(this.dgvVentas);

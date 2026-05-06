@@ -1,6 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using S.S.S.models;
 using S.S.S.views;
+using System;
+using System.Windows.Forms;
 
 namespace S.S.S
 {
@@ -9,6 +10,7 @@ namespace S.S.S
         public MainForm()
         {
             InitializeComponent();
+            btnCrearUsuarios.Visible = Sesion.EsAdmin;
         }
 
         private void AbrirFormEnPanel(Form formHijo)
@@ -55,6 +57,21 @@ namespace S.S.S
         private void btnCategorias_Click(object sender, EventArgs e)
         {
                         AbrirFormEnPanel(new CategoriasForms());
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Estás seguro de que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Close();
+            }
+        }
+
+        private void btnCrearUsuarios_Click(object sender, EventArgs e)
+        {
+           AbrirFormEnPanel(new CrearUsuariosForm());
         }
     }
     }

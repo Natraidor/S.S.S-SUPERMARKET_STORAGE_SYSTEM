@@ -28,7 +28,7 @@ namespace S.S.S
             if (loginExitoso)
             {
                 
-                //ESTO ME SIRVE PARA OTRO DIA TENGO QUE GUARDAR EL USUARIO LOGUEADO EN UNA VARIABLE GLOBAL O ALGO ASI PARA PODER USARLO EN OTROS FORMULARIOS
+                //ESTO ME SIRVE PARA OTRO DIA TENGO QUE GUARDAR EL USUARIO LOGUEADO EN UNA VARIABLE GLOBAL O ALGO ASI PARA PODER USARLO EN OTROS FORMULARIOS despues lo ocupare
                 string user = txtUser.Text;
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
@@ -66,6 +66,11 @@ namespace S.S.S
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

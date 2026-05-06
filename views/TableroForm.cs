@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
+using S.S.S.models;
 using System.Windows.Forms;
 using S.S.S.controllers;
 
@@ -43,5 +45,6 @@ namespace S.S.S.views
         {
 
         }
+
     }
 }

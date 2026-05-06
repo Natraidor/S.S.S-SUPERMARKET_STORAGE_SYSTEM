@@ -61,12 +61,32 @@ namespace S.S.S.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Box {
+            get {
+                object obj = ResourceManager.GetObject("Box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
         internal static byte[] Frame {
             get {
                 object obj = ResourceManager.GetObject("Frame", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Left {
+            get {
+                object obj = ResourceManager.GetObject("Left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -116,6 +136,16 @@ namespace S.S.S.Properties {
         internal static System.Drawing.Bitmap shopping_cart_5532864 {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart_5532864", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap U_Turn_to_Left {
+            get {
+                object obj = ResourceManager.GetObject("U Turn to Left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -45,7 +45,7 @@ namespace S.S.S.controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error en Controller: " + ex.Message);
+                Console.WriteLine("Errord en Controller: " + ex.Message);
             }
             finally
             {

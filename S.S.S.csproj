@@ -62,8 +62,16 @@
     <Compile Include="controllers\VentasController.cs" />
     <Compile Include="data\Conexion.cs" />
     <Compile Include="models\CategoriasModel.cs" />
+    <Compile Include="models\HasheoContraseña.cs" />
     <Compile Include="models\ProductosModel.cs" />
+    <Compile Include="models\Sesion.cs" />
     <Compile Include="models\TableroModel.cs" />
+    <Compile Include="views\CrearUsuariosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CrearUsuariosForm.Designer.cs">
+      <DependentUpon>CrearUsuariosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +91,12 @@
     </Compile>
     <Compile Include="views\AgregarProductos.Designer.cs">
       <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\PrimerUsoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\PrimerUsoForm.Designer.cs">
+      <DependentUpon>PrimerUsoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\ProductosForm.cs">
       <SubType>Form</SubType>
@@ -126,6 +140,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="views\CrearUsuariosForm.resx">
+      <DependentUpon>CrearUsuariosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\PrimerUsoForm.resx">
+      <DependentUpon>PrimerUsoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\ProductosForm.resx">
       <DependentUpon>ProductosForm.cs</DependentUpon>
@@ -167,6 +187,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping-cart_5532864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paquete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-de-verificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U Turn to Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
