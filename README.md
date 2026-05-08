@@ -37,6 +37,19 @@ S.S.S/
 
 - System.Text
 
+- System.Collections.Generic
+
+- System.ComponentModel
+
+- System.Data
+
+- System.Linq
+
+- System.Drawing
+
+- System.Threading.Tasks
+
+
   ## Nomenclatura utlizada
 
   PascalCase
