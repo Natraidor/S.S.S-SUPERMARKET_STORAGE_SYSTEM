@@ -91,6 +91,7 @@ namespace S.S.S.models
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
+                    command.Connection = connection;
                     command.CommandText = "SELECT COUNT(*) FROM Usuarios";
                     int count = Convert.ToInt32(command.ExecuteScalar());
                     return count > 0;

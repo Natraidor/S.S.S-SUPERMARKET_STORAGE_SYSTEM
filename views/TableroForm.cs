@@ -29,10 +29,10 @@ namespace S.S.S.views
 
         private void CargarDatosTablero()
         {
-            // 📦 Total productos
+
             LbTotaldeProductos.Text = controlador.MostrarTotalProductos().ToString();
 
-            // 💰 Total ventas
+
             LbTotaldeVentas.Text = "$" + controlador.MostrarTotalVentas().ToString("0.00");
         }
 

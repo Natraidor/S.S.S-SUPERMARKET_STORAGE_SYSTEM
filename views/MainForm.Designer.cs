@@ -1,6 +1,6 @@
 ﻿namespace S.S.S
 {
-    partial class MainForm
+    partial class Menu
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -15,7 +15,9 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnCrearUsuarios = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
@@ -23,7 +25,6 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnTablero = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnCrearUsuarios = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,6 +43,22 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 500);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btnCrearUsuarios
+            // 
+            this.btnCrearUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCrearUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnCrearUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearUsuarios.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuarios.Location = new System.Drawing.Point(0, 332);
+            this.btnCrearUsuarios.Name = "btnCrearUsuarios";
+            this.btnCrearUsuarios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCrearUsuarios.Size = new System.Drawing.Size(200, 58);
+            this.btnCrearUsuarios.TabIndex = 6;
+            this.btnCrearUsuarios.Text = "Crear Usuarios";
+            this.btnCrearUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearUsuarios.Click += new System.EventHandler(this.btnCrearUsuarios_Click);
             // 
             // btnSalir
             // 
@@ -149,30 +166,15 @@
             this.panelContenedor.Size = new System.Drawing.Size(668, 500);
             this.panelContenedor.TabIndex = 0;
             // 
-            // btnCrearUsuarios
-            // 
-            this.btnCrearUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCrearUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnCrearUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearUsuarios.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuarios.Location = new System.Drawing.Point(0, 332);
-            this.btnCrearUsuarios.Name = "btnCrearUsuarios";
-            this.btnCrearUsuarios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCrearUsuarios.Size = new System.Drawing.Size(200, 58);
-            this.btnCrearUsuarios.TabIndex = 6;
-            this.btnCrearUsuarios.Text = "Crear Usuarios";
-            this.btnCrearUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearUsuarios.Click += new System.EventHandler(this.btnCrearUsuarios_Click);
-            // 
-            // MainForm
+            // Menu
             // 
             this.ClientSize = new System.Drawing.Size(868, 500);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelMenu);
-            this.Name = "MainForm";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -24,6 +24,8 @@ namespace S.S.S.views
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Load += (s, e) => this.Close();
             }
+            txtPassword.UseSystemPasswordChar = true;
+            txtConfirmalPassword.UseSystemPasswordChar = true;
         }
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
@@ -74,6 +76,12 @@ namespace S.S.S.views
             txtConfirmalPassword.Clear();
             txtEmail.Clear();
             txtUsername.Focus();
+        }
+
+        private void btnPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+            txtConfirmalPassword.UseSystemPasswordChar = !txtConfirmalPassword.UseSystemPasswordChar;
         }
     }
 }

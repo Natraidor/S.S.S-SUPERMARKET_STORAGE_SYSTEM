@@ -32,16 +32,17 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtConfirmalPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnPassword = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,22 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(130, 57);
             this.guna2HtmlLabel2.TabIndex = 23;
             this.guna2HtmlLabel2.Text = "S.S.S";
+            // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
+            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(42, 99);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(211, 201);
+            this.guna2ImageButton3.TabIndex = 22;
+            this.guna2ImageButton3.UseTransparentBackground = true;
             // 
             // txtPassword
             // 
@@ -174,22 +191,6 @@
             this.guna2ImageButton4.Size = new System.Drawing.Size(64, 54);
             this.guna2ImageButton4.TabIndex = 29;
             // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
-            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(42, 99);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(211, 201);
-            this.guna2ImageButton3.TabIndex = 22;
-            this.guna2ImageButton3.UseTransparentBackground = true;
-            // 
             // guna2ImageButton2
             // 
             this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -253,11 +254,27 @@
             this.guna2ImageButton5.Size = new System.Drawing.Size(64, 54);
             this.guna2ImageButton5.TabIndex = 31;
             // 
+            // btnPassword
+            // 
+            this.btnPassword.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPassword.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnPassword.Image")));
+            this.btnPassword.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPassword.ImageRotate = 0F;
+            this.btnPassword.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Location = new System.Drawing.Point(753, 205);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Size = new System.Drawing.Size(35, 30);
+            this.btnPassword.TabIndex = 33;
+            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
+            // 
             // PrimerUsoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 544);
+            this.Controls.Add(this.btnPassword);
             this.Controls.Add(this.txtConfirmalPassword);
             this.Controls.Add(this.guna2ImageButton5);
             this.Controls.Add(this.txtEmail);
@@ -269,6 +286,8 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.btnRegister);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PrimerUsoForm";
             this.Text = "PrimerUsoForm";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
@@ -293,5 +312,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmalPassword;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPassword;
     }
 }

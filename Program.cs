@@ -22,23 +22,23 @@ namespace S.S.S
             //Application.Run(new LoginForm());
             //Application.Run(new MenuForm());
             //Application.Run(new AgregarProductos());
-            //Application.Run(new MainForm());
+            //Application.Run(new Menu());
             //Application.Run(new ProductosForm());
 
             if (!loginController.ExistenUsuarios()) {
+
+                 Application.Run(new PrimerUsoForm());
+
+                 if(loginController.ExistenUsuarios()== true)
+                 {
+                     Application.Run(new LoginForm());
+                 }
+             }
+             else
+             {
+                 Application.Run(new LoginForm());
+             }
             
-                Application.Run(new PrimerUsoForm());
-
-                if(loginController.ExistenUsuarios()== true)
-                {
-                    Application.Run(new LoginForm());
-                }
-            }
-            else
-            {
-                Application.Run(new LoginForm());
-            }
-
         }
     }
 }

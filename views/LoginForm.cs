@@ -18,6 +18,7 @@ namespace S.S.S
         public LoginForm()
         {
             InitializeComponent();
+            txtPass.UseSystemPasswordChar = true;   
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -32,7 +33,7 @@ namespace S.S.S
                 string user = txtUser.Text;
                 MessageBox.Show("Login exitoso. Bienvenido " + txtUser.Text);
                 this.Hide();
-                MainForm menuForm = new MainForm();
+                Menu menuForm = new Menu();
                 menuForm.Show();
 
                 //TableroForm ShowTableroForm = new TableroForm();
@@ -71,6 +72,11 @@ namespace S.S.S
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnPassword_Click(object sender, EventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = !txtPass.UseSystemPasswordChar;
         }
     }
 }

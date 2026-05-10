@@ -7,7 +7,6 @@ namespace S.S.S.models
 {
     public class CategoriasModel : Conexion
     {
-        // 🔍 Obtener todas las categorías
         public DataTable ObtenerCategorias()
         {
             DataTable tabla = new DataTable();
@@ -34,7 +33,6 @@ namespace S.S.S.models
             return tabla;
         }
 
-        // ➕ Insertar categoría
         public void InsertarCategoria(string nombre, string descripcion)
         {
             using (var connection = AbrirConextion())
@@ -51,7 +49,6 @@ namespace S.S.S.models
             }
         }
 
-        // ✏️ Actualizar categoría
         public void ActualizarCategoria(int id, string nombre, string descripcion)
         {
             using (var connection = AbrirConextion())
@@ -69,7 +66,6 @@ namespace S.S.S.models
             }
         }
 
-        // ❌ Eliminar categoría
         public void EliminarCategoria(int id)
         {
             using (var connection = AbrirConextion())

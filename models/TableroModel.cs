@@ -6,7 +6,6 @@ namespace S.S.S.models
 {
     public class TableroModel : Conexion
     {
-        // 🔹 Obtener total de productos
         public int ObtenerTotalProductos()
         {
             using (var connection = AbrirConextion())
@@ -20,7 +19,6 @@ namespace S.S.S.models
             }
         }
 
-        // 🔹 Obtener total de ventas
         public decimal ObtenerTotalVentas()
         {
             using (var connection = AbrirConextion())

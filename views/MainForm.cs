@@ -1,13 +1,14 @@
 ﻿using S.S.S.models;
 using S.S.S.views;
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace S.S.S
 {
-    public partial class MainForm : Form
+    public partial class Menu : Form
     {
-        public MainForm()
+        public Menu()
         {
             InitializeComponent();
             btnCrearUsuarios.Visible = Sesion.EsAdmin;
@@ -59,7 +60,7 @@ namespace S.S.S
                         AbrirFormEnPanel(new CategoriasForms());
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private async void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Estás seguro de que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

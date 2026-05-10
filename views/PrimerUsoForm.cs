@@ -16,6 +16,8 @@ namespace S.S.S.views
         public PrimerUsoForm()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
+            txtConfirmalPassword.UseSystemPasswordChar = true;
             MessageBox.Show("Bienvenido a S.S.S., tal parece no existe usuario creado en el sistema, profavor cree un usuario para ingresar.");
         }
 
@@ -54,6 +56,12 @@ namespace S.S.S.views
                 login.Show();
                 this.Close();
             }
+        }
+
+        private void btnPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+            txtConfirmalPassword.UseSystemPasswordChar = !txtConfirmalPassword.UseSystemPasswordChar;
         }
     }
     

@@ -30,14 +30,15 @@ namespace S.S.S
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentasForm));
             this.lbltitulo = new System.Windows.Forms.Label();
             this.lblbuscar = new System.Windows.Forms.Label();
-            this.dgvVentas = new System.Windows.Forms.DataGridView();
             this.gtxtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunabtnBuscar = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbProductos = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnVentas = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCantidad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgvVentas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,12 +48,12 @@ namespace S.S.S
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(231, 9);
+            this.lbltitulo.Location = new System.Drawing.Point(114, 9);
             this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(77, 30);
+            this.lbltitulo.Size = new System.Drawing.Size(318, 30);
             this.lbltitulo.TabIndex = 0;
-            this.lbltitulo.Text = "Ventas";
+            this.lbltitulo.Text = "Registro de salida de productos";
             // 
             // lblbuscar
             // 
@@ -64,40 +65,6 @@ namespace S.S.S
             this.lblbuscar.Size = new System.Drawing.Size(112, 19);
             this.lblbuscar.TabIndex = 1;
             this.lblbuscar.Text = "Buscar producto:";
-            // 
-            // dgvVentas
-            // 
-            this.dgvVentas.AllowUserToDeleteRows = false;
-            this.dgvVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvVentas.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvVentas.GridColor = System.Drawing.SystemColors.WindowText;
-            this.dgvVentas.Location = new System.Drawing.Point(57, 98);
-            this.dgvVentas.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvVentas.Name = "dgvVentas";
-            this.dgvVentas.RowHeadersWidth = 51;
-            this.dgvVentas.RowTemplate.Height = 30;
-            this.dgvVentas.Size = new System.Drawing.Size(420, 174);
-            this.dgvVentas.TabIndex = 4;
-            this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick_1);
             // 
             // gtxtBuscar
             // 
@@ -121,6 +88,7 @@ namespace S.S.S
             this.gtxtBuscar.SelectedText = "";
             this.gtxtBuscar.Size = new System.Drawing.Size(290, 21);
             this.gtxtBuscar.TabIndex = 5;
+            this.gtxtBuscar.TextChanged += new System.EventHandler(this.gtxtBuscar_TextChanged_1);
             // 
             // gunabtnBuscar
             // 
@@ -139,16 +107,88 @@ namespace S.S.S
             this.gunabtnBuscar.Size = new System.Drawing.Size(89, 21);
             this.gunabtnBuscar.TabIndex = 6;
             this.gunabtnBuscar.Text = "Buscar";
+            this.gunabtnBuscar.Click += new System.EventHandler(this.gunabtnBuscar_Click);
+            // 
+            // cmbProductos
+            // 
+            this.cmbProductos.BackColor = System.Drawing.Color.Transparent;
+            this.cmbProductos.BorderRadius = 10;
+            this.cmbProductos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProductos.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbProductos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbProductos.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbProductos.ItemHeight = 30;
+            this.cmbProductos.Location = new System.Drawing.Point(20, 95);
+            this.cmbProductos.Name = "cmbProductos";
+            this.cmbProductos.Size = new System.Drawing.Size(164, 36);
+            this.cmbProductos.TabIndex = 7;
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVentas.BackColor = System.Drawing.Color.Transparent;
+            this.btnVentas.BorderRadius = 10;
+            this.btnVentas.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVentas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVentas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVentas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVentas.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.Location = new System.Drawing.Point(364, 95);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(151, 36);
+            this.btnVentas.TabIndex = 8;
+            this.btnVentas.Text = "Vender producto";
+            this.btnVentas.UseTransparentBackground = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.BorderRadius = 10;
+            this.txtCantidad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCantidad.DefaultText = "";
+            this.txtCantidad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCantidad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCantidad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCantidad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCantidad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCantidad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCantidad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCantidad.Location = new System.Drawing.Point(190, 95);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.PlaceholderText = "Cantidad a vender";
+            this.txtCantidad.SelectedText = "";
+            this.txtCantidad.Size = new System.Drawing.Size(168, 36);
+            this.txtCantidad.TabIndex = 10;
+            this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // dgvVentas
+            // 
+            this.dgvVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvVentas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVentas.Location = new System.Drawing.Point(20, 151);
+            this.dgvVentas.Name = "dgvVentas";
+            this.dgvVentas.Size = new System.Drawing.Size(495, 198);
+            this.dgvVentas.TabIndex = 11;
             // 
             // VentasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(122)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(546, 342);
+            this.ClientSize = new System.Drawing.Size(546, 386);
+            this.Controls.Add(this.dgvVentas);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.btnVentas);
+            this.Controls.Add(this.cmbProductos);
             this.Controls.Add(this.gunabtnBuscar);
             this.Controls.Add(this.gtxtBuscar);
-            this.Controls.Add(this.dgvVentas);
             this.Controls.Add(this.lblbuscar);
             this.Controls.Add(this.lbltitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -156,6 +196,7 @@ namespace S.S.S
             this.Name = "VentasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.VentasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,8 +207,11 @@ namespace S.S.S
 
         private Label lbltitulo;
         private Label lblbuscar;
-        private DataGridView dgvVentas;
         private Guna.UI2.WinForms.Guna2TextBox gtxtBuscar;
         private Guna.UI2.WinForms.Guna2Button gunabtnBuscar;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbProductos;
+        private Guna.UI2.WinForms.Guna2Button btnVentas;
+        private Guna.UI2.WinForms.Guna2TextBox txtCantidad;
+        private DataGridView dgvVentas;
     }
 }

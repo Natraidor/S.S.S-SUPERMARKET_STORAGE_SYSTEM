@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearUsuariosForm));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txtConfirmalPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -37,14 +39,14 @@
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnCrearUsuario = new Guna.UI2.WinForms.Guna2Button();
-            this.txtConfirmalPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnPassword = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 10;
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnPassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtConfirmalPassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2ImageButton5);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtEmail);
@@ -58,6 +60,44 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(540, 383);
             this.guna2CustomGradientPanel1.TabIndex = 38;
+            // 
+            // txtConfirmalPassword
+            // 
+            this.txtConfirmalPassword.BackColor = System.Drawing.Color.White;
+            this.txtConfirmalPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtConfirmalPassword.BorderRadius = 10;
+            this.txtConfirmalPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtConfirmalPassword.DefaultText = "";
+            this.txtConfirmalPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtConfirmalPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtConfirmalPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConfirmalPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConfirmalPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConfirmalPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtConfirmalPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConfirmalPassword.Location = new System.Drawing.Point(121, 177);
+            this.txtConfirmalPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmalPassword.Name = "txtConfirmalPassword";
+            this.txtConfirmalPassword.PlaceholderText = "Repita la contraseña";
+            this.txtConfirmalPassword.SelectedText = "";
+            this.txtConfirmalPassword.Size = new System.Drawing.Size(344, 57);
+            this.txtConfirmalPassword.TabIndex = 46;
+            // 
+            // guna2ImageButton5
+            // 
+            this.guna2ImageButton5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2ImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.Image")));
+            this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton5.ImageRotate = 0F;
+            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(65, 178);
+            this.guna2ImageButton5.Name = "guna2ImageButton5";
+            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2ImageButton5.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton5.TabIndex = 45;
+            this.guna2ImageButton5.UseTransparentBackground = true;
             // 
             // txtEmail
             // 
@@ -191,43 +231,22 @@
             this.btnCrearUsuario.Text = "Registrar Usuario";
             this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
-            // txtConfirmalPassword
+            // btnPassword
             // 
-            this.txtConfirmalPassword.BackColor = System.Drawing.Color.White;
-            this.txtConfirmalPassword.BorderColor = System.Drawing.Color.Black;
-            this.txtConfirmalPassword.BorderRadius = 10;
-            this.txtConfirmalPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtConfirmalPassword.DefaultText = "";
-            this.txtConfirmalPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtConfirmalPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtConfirmalPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtConfirmalPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtConfirmalPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConfirmalPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtConfirmalPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConfirmalPassword.Location = new System.Drawing.Point(121, 177);
-            this.txtConfirmalPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtConfirmalPassword.Name = "txtConfirmalPassword";
-            this.txtConfirmalPassword.PlaceholderText = "Repita la contraseña";
-            this.txtConfirmalPassword.SelectedText = "";
-            this.txtConfirmalPassword.Size = new System.Drawing.Size(344, 57);
-            this.txtConfirmalPassword.TabIndex = 46;
-            // 
-            // guna2ImageButton5
-            // 
-            this.guna2ImageButton5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.Image")));
-            this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton5.ImageRotate = 0F;
-            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(65, 178);
-            this.guna2ImageButton5.Name = "guna2ImageButton5";
-            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton5.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton5.TabIndex = 45;
-            this.guna2ImageButton5.UseTransparentBackground = true;
+            this.btnPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnPassword.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPassword.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnPassword.Image")));
+            this.btnPassword.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPassword.ImageRotate = 0F;
+            this.btnPassword.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Location = new System.Drawing.Point(481, 190);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Size = new System.Drawing.Size(35, 30);
+            this.btnPassword.TabIndex = 47;
+            this.btnPassword.UseTransparentBackground = true;
+            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
             // 
             // CrearUsuariosForm
             // 
@@ -236,8 +255,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(122)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(652, 461);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CrearUsuariosForm";
-            this.Text = "Form1";
+            this.Text = "Crear Usuarios";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -255,5 +275,6 @@
         private Guna.UI2.WinForms.Guna2Button btnCrearUsuario;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmalPassword;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPassword;
     }
 }

@@ -155,8 +155,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TableroForm";
-            this.Text = "Form1";
+            this.Text = "Tablero";
             this.Load += new System.EventHandler(this.TableroForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

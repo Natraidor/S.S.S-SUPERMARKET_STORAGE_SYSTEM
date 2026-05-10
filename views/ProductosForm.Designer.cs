@@ -32,12 +32,12 @@
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.panelEdicion = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.txtNombreEdit = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPrecioEdit = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtStockEdit = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnActualizar = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbCategoriaEdit = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cmbCategoriaEdit = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnActualizar = new Guna.UI2.WinForms.Guna2Button();
+            this.txtStockEdit = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrecioEdit = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreEdit = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.panelEdicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
@@ -98,59 +98,35 @@
             this.panelEdicion.Size = new System.Drawing.Size(495, 365);
             this.panelEdicion.TabIndex = 5;
             // 
-            // txtNombreEdit
+            // btnCancelar
             // 
-            this.txtNombreEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreEdit.DefaultText = "";
-            this.txtNombreEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombreEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombreEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEdit.Location = new System.Drawing.Point(66, 61);
-            this.txtNombreEdit.Name = "txtNombreEdit";
-            this.txtNombreEdit.PlaceholderText = "";
-            this.txtNombreEdit.SelectedText = "";
-            this.txtNombreEdit.Size = new System.Drawing.Size(380, 36);
-            this.txtNombreEdit.TabIndex = 0;
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.FillColor = System.Drawing.Color.Black;
+            this.btnCancelar.Image = global::S.S.S.Properties.Resources.U_Turn_to_Left;
+            this.btnCancelar.ImageRotate = 0F;
+            this.btnCancelar.Location = new System.Drawing.Point(11, 11);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(31, 33);
+            this.btnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabStop = false;
+            this.btnCancelar.UseTransparentBackground = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtPrecioEdit
+            // cmbCategoriaEdit
             // 
-            this.txtPrecioEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrecioEdit.DefaultText = "";
-            this.txtPrecioEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPrecioEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPrecioEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrecioEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrecioEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrecioEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPrecioEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrecioEdit.Location = new System.Drawing.Point(66, 118);
-            this.txtPrecioEdit.Name = "txtPrecioEdit";
-            this.txtPrecioEdit.PlaceholderText = "";
-            this.txtPrecioEdit.SelectedText = "";
-            this.txtPrecioEdit.Size = new System.Drawing.Size(380, 36);
-            this.txtPrecioEdit.TabIndex = 1;
-            // 
-            // txtStockEdit
-            // 
-            this.txtStockEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStockEdit.DefaultText = "";
-            this.txtStockEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtStockEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtStockEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStockEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStockEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStockEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtStockEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStockEdit.Location = new System.Drawing.Point(66, 235);
-            this.txtStockEdit.Name = "txtStockEdit";
-            this.txtStockEdit.PlaceholderText = "";
-            this.txtStockEdit.SelectedText = "";
-            this.txtStockEdit.Size = new System.Drawing.Size(97, 36);
-            this.txtStockEdit.TabIndex = 3;
+            this.cmbCategoriaEdit.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategoriaEdit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategoriaEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriaEdit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoriaEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoriaEdit.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbCategoriaEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCategoriaEdit.ItemHeight = 30;
+            this.cmbCategoriaEdit.Location = new System.Drawing.Point(66, 170);
+            this.cmbCategoriaEdit.Name = "cmbCategoriaEdit";
+            this.cmbCategoriaEdit.Size = new System.Drawing.Size(216, 36);
+            this.cmbCategoriaEdit.TabIndex = 8;
             // 
             // btnActualizar
             // 
@@ -171,35 +147,59 @@
             this.btnActualizar.UseTransparentBackground = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // cmbCategoriaEdit
+            // txtStockEdit
             // 
-            this.cmbCategoriaEdit.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCategoriaEdit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCategoriaEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoriaEdit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoriaEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoriaEdit.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategoriaEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbCategoriaEdit.ItemHeight = 30;
-            this.cmbCategoriaEdit.Location = new System.Drawing.Point(66, 170);
-            this.cmbCategoriaEdit.Name = "cmbCategoriaEdit";
-            this.cmbCategoriaEdit.Size = new System.Drawing.Size(216, 36);
-            this.cmbCategoriaEdit.TabIndex = 8;
+            this.txtStockEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStockEdit.DefaultText = "";
+            this.txtStockEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStockEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStockEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStockEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStockEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStockEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStockEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStockEdit.Location = new System.Drawing.Point(66, 235);
+            this.txtStockEdit.Name = "txtStockEdit";
+            this.txtStockEdit.PlaceholderText = "";
+            this.txtStockEdit.SelectedText = "";
+            this.txtStockEdit.Size = new System.Drawing.Size(97, 36);
+            this.txtStockEdit.TabIndex = 3;
             // 
-            // btnCancelar
+            // txtPrecioEdit
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.FillColor = System.Drawing.Color.Black;
-            this.btnCancelar.Image = global::S.S.S.Properties.Resources.U_Turn_to_Left;
-            this.btnCancelar.ImageRotate = 0F;
-            this.btnCancelar.Location = new System.Drawing.Point(11, 11);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(31, 33);
-            this.btnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.TabStop = false;
-            this.btnCancelar.UseTransparentBackground = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.txtPrecioEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrecioEdit.DefaultText = "";
+            this.txtPrecioEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrecioEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrecioEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecioEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecioEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecioEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPrecioEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecioEdit.Location = new System.Drawing.Point(66, 118);
+            this.txtPrecioEdit.Name = "txtPrecioEdit";
+            this.txtPrecioEdit.PlaceholderText = "";
+            this.txtPrecioEdit.SelectedText = "";
+            this.txtPrecioEdit.Size = new System.Drawing.Size(380, 36);
+            this.txtPrecioEdit.TabIndex = 1;
+            // 
+            // txtNombreEdit
+            // 
+            this.txtNombreEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreEdit.DefaultText = "";
+            this.txtNombreEdit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEdit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEdit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreEdit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEdit.Location = new System.Drawing.Point(66, 61);
+            this.txtNombreEdit.Name = "txtNombreEdit";
+            this.txtNombreEdit.PlaceholderText = "";
+            this.txtNombreEdit.SelectedText = "";
+            this.txtNombreEdit.Size = new System.Drawing.Size(380, 36);
+            this.txtNombreEdit.TabIndex = 0;
             // 
             // ProductosForm
             // 

@@ -34,11 +34,12 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPassword = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,16 +127,6 @@
             this.guna2HtmlLabel2.TabIndex = 23;
             this.guna2HtmlLabel2.Text = "S.S.S";
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(359, 55);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(134, 26);
-            this.guna2HtmlLabel1.TabIndex = 21;
-            this.guna2HtmlLabel1.Text = "Inicio de sesión";
-            // 
             // guna2ImageButton3
             // 
             this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
@@ -152,6 +143,16 @@
             this.guna2ImageButton3.TabIndex = 22;
             this.guna2ImageButton3.UseTransparentBackground = true;
             this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(359, 55);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(134, 26);
+            this.guna2HtmlLabel1.TabIndex = 21;
+            this.guna2HtmlLabel1.Text = "Inicio de sesión";
             // 
             // guna2ImageButton2
             // 
@@ -200,12 +201,28 @@
             this.btnSalir.UseTransparentBackground = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnPassword
+            // 
+            this.btnPassword.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPassword.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnPassword.Image")));
+            this.btnPassword.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPassword.ImageRotate = 0F;
+            this.btnPassword.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Location = new System.Drawing.Point(749, 259);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPassword.Size = new System.Drawing.Size(35, 30);
+            this.btnPassword.TabIndex = 23;
+            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPassword);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
@@ -214,7 +231,7 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.btnLogin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -238,6 +255,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Button btnSalir;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPassword;
     }
 }
 

@@ -64,6 +64,7 @@
     <Compile Include="models\CategoriasModel.cs" />
     <Compile Include="models\HasheoContraseña.cs" />
     <Compile Include="models\ProductosModel.cs" />
+    <Compile Include="models\ProductoVentaModel.cs" />
     <Compile Include="models\Sesion.cs" />
     <Compile Include="models\TableroModel.cs" />
     <Compile Include="views\CrearUsuariosForm.cs">
